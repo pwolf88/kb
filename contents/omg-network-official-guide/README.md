@@ -1,4 +1,0 @@
-# OMG Network Official Guide
-
-
-
