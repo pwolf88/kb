@@ -12,6 +12,8 @@ This project and everyone participating in it is governed by the [Code of Conduc
 Please report unacceptable behavior to [support@buildOMG.org](mailto:support@buildOMG.org).
 :::
 
+> TBD : update the guidelines to reflect the KB project's goals (ie. no dependency to be expected, etc.)
+
 ## Reporting Bugs
 
 This section guides you through submitting a bug report. Following these guidelines helps maintainers and the community understand your report :pencil:, reproduce the behavior :computer: :computer:, and find related reports :mag_right:.
