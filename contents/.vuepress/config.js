@@ -9,6 +9,7 @@ module.exports = {
           collapsable: false,
           children: [
             '',
+            'points-of-view',
             'history',
             'vision',
             'basics',
