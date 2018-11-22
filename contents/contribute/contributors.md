@@ -2,6 +2,4 @@
 
 > TBD
 
-## pwolf88
-
-> TBD
+<ContributorsList/>
