@@ -6,21 +6,20 @@ module.exports = {
       
       '/guide/': [
         {
-          title: 'Introduction',
           collapsable: false,
           children: [
             '',
+            'points-of-view',
             'history',
+            'vision',
             'basics',
-            'concepts',
           ]
         },
         {
           title: 'OMG Network',
           collapsable: false,
           children: [
-            'network/about',
-            'network/who',
+            'network/',
             'network/adoption',
             'network/benefits',
           ]
@@ -49,16 +48,15 @@ module.exports = {
         'faq',
         'ama',
       ],
-      '/': [
+      '/contribute/': [
         '',
-        'license',
-        'contribute',
         'code-of-conduct',
+        'contributors',
       ],
+      '/': false,
       
     },
     nav: [
-      { text: 'Home', link: '/' },
       { text: 'Guide', link: '/guide/' },
       { text: 'Deep Dive', link: '/deep-dive/' },
       {
@@ -69,11 +67,9 @@ module.exports = {
           { text: 'FAQ', link: '/resources/faq' },
           { text: 'AMAs', link: '/resources/ama' },
         ]
-      }
+      },
+      { text: 'Contribute', link: '/contribute/' },
     ],
-    // original repo
-    repo: 'buildOMG/kb',
-    // "edit" links
     docsDir: 'contents',
     editLinks: true,
     editLinkText: 'Help us improve this page!'

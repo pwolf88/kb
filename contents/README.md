@@ -2,4 +2,6 @@
 title: About
 ---
 
-The [OMG Network Knowledge Base](/) \(OMG KB\) was conceived as a joint effort between the OMG community and project team to support quality communication and discourse concerning the OMG Network. The OMG KB is maintained by [community contributors](https://github.com/buildOMG/kb/issues) and reflects an ongoing collection of curated information on the status and development of the [OMG Network](https://omisego.network/).
+The [OMG Knowledge Base](/) \(OMG KB\) is an open source, up to date, comprehensive collection of information and resources related to the [OMG Network](https://omisego.network/).
+
+The OMG KB was conceived as a joint effort between the OMG community and project team. It is maintained by [community contributors](/contribute/contributors.html) and released under the [MIT License](https://raw.githubusercontent.com/buildOMG/kb/master/LICENSE).

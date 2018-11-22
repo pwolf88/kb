@@ -1,10 +1,10 @@
 # Decentralized Exchange Layer
 
-OMG’s DEX layer provides the back end for easy exchange between digital assets on the OMG Network.
+OMG's DEX layer provides the back end for easy exchange between digital assets on the OMG Network.
 
 We recently put out a [post](https://blog.omisego.network/omg-dex-update-6245812a7b2d) outlining the design for the initial DEX implementation. In its initial phases, the OMG DEX will serve as the base layer for a collection of venues (platforms where orders to trade digital assets are arranged and executed) that perform order matching outside of the OMG Network consensus, with provable on-chain settlement on the OMG network. In other words, order matching is performed off-chain and any order that is either settled or canceled will be processed as a transaction on the OMG Network, and have to pay fees accordingly.
 
-The first iteration of the DEX will use a construction we’re calling Restricted Custody, which we settled on as the best compromise between giving users total control of their funds for the majority of the time and keeping as many transactions as possible on chain, without sacrificing liquidity. Users have full custody until they place an order, at which time custody is transferred to the venue until the order is either filled or cancelled. During the time that venues have custody of user funds on the OMG DEX, user funds still have an extra layer of protection in that an attempted malicious act by the venue (or a hacker) can be blocked by the operator or by the child chain consensus.
+The first iteration of the DEX will use a construction we're calling Restricted Custody, which we settled on as the best compromise between giving users total control of their funds for the majority of the time and keeping as many transactions as possible on chain, without sacrificing liquidity. Users have full custody until they place an order, at which time custody is transferred to the venue until the order is either filled or cancelled. During the time that venues have custody of user funds on the OMG DEX, user funds still have an extra layer of protection in that an attempted malicious act by the venue (or a hacker) can be blocked by the operator or by the child chain consensus.
 
 ![](https://cdn-images-1.medium.com/max/1600/0*IPdKM2bkk-Uzio55)
 
@@ -15,7 +15,7 @@ The first iteration of the DEX will use a construction we’re calling Restricte
 
 The term decentralized is a very broad term and typically is a catch-all for a number of characteristics or dimensions. For example, we may use the term decentralized to refer to the lack of a single controlling entity, and as a result bring the benefit of censorship resistance.
 
-Similarly the term “DEX” (decentralized exchange) also sees broad use with no widespread accepted definition. In order to provide clarity and consistency of understanding when talking about decentralization, or more specifically a DEX, we've decided to decompose our use of the term into a non exhaustive list of dimensions. We can then use these dimensions to describe the OMG DEX itself, its benefits and detail how we will prioritize its development. For the remainder of this document we will refer to the OMG DEX as "ODEX" for brevity.
+Similarly the term "DEX" (decentralized exchange) also sees broad use with no widespread accepted definition. In order to provide clarity and consistency of understanding when talking about decentralization, or more specifically a DEX, we've decided to decompose our use of the term into a non exhaustive list of dimensions. We can then use these dimensions to describe the OMG DEX itself, its benefits and detail how we will prioritize its development. For the remainder of this document we will refer to the OMG DEX as "ODEX" for brevity.
 
 #### A Taxonomy for Decentralization
 
@@ -55,7 +55,7 @@ To help establish a reusable taxonomy of decentralization using our identified d
 | Responsive | Trade when you want to trade (reduced probability of network congestion due to the higher throughput of the OMG Network) |
 | Private | Identifying yourself may not be required in all exchanges |
 
-It isn’t possible to solve for _all_ of the dimensions listed above, and each of the dimensions must be treated as design decisions on a spectrum, however using the taxonomy allows us to make informed choices around the impacts of our design choices and aids prioritization. In the following sections we will offer overviews of a number of alternative, evolving models, each driven by various tradeoffs for the dimensions above.
+It isn't possible to solve for _all_ of the dimensions listed above, and each of the dimensions must be treated as design decisions on a spectrum, however using the taxonomy allows us to make informed choices around the impacts of our design choices and aids prioritization. In the following sections we will offer overviews of a number of alternative, evolving models, each driven by various tradeoffs for the dimensions above.
 
 In each of the models our primary goal is to solve for security and specifically the minimisation of funds loss. Thereafter, there exists a number of options in the design space balancing other key dimensions such as fairness, price transparency, user privacy, and speed.
 
@@ -124,7 +124,7 @@ Without batch settlement, it would be expected for venues to immediately settle 
 
 #### Proveable Trade Settlement
 
-A venue will not be allowed to ‘spend’ or move funds in an unconstrained manner. Instead funds may only be ‘settled’ and a proof must be produced by the venue with the orders that constitute the resultant settlement.
+A venue will not be allowed to 'spend' or move funds in an unconstrained manner. Instead funds may only be 'settled' and a proof must be produced by the venue with the orders that constitute the resultant settlement.
 
 Proveable trade settlement increases the safety of the exchange for users and provides valuable post-trade transparency (see next section).
 
@@ -136,7 +136,7 @@ Transparency is also important because the data can be used to predict price cha
 
 Whilst there may be multiple venues operating independently on the ODEX, information about how the market is operating may be consolidated.
 
-A ‘global’ ticker tape could be derived for:
+A 'global' ticker tape could be derived for:
 
 * Prices for all trade executions for a particular venue, or the network as a whole
 * Last price for any instrument (currency pair such as ETH/OMG)
@@ -293,7 +293,7 @@ Further research will be performed to consider the safety of the OMG Network and
 
 The prior descriptions about the ODEX assume that the safety of venues are tightly coupled in the consensus of the OMG Network. That is, venues are considered as part of layer 2.
 
-It may not be desirable to couple the consensus of the OMG Network into venues because of the potentially unbounded amount of computation that would be required for validators. In that event, venues could be moved to the ‘App’ layer, and define their own safety and security guarantees.
+It may not be desirable to couple the consensus of the OMG Network into venues because of the potentially unbounded amount of computation that would be required for validators. In that event, venues could be moved to the 'App' layer, and define their own safety and security guarantees.
 
 An alternative final state of the ODEX would then look as follows:
 
@@ -349,7 +349,7 @@ During all discussions surrounding the ODEX design, it important to remember tha
 
 > As Alice I can cheaply use Burger tokens to Bob to make a payment to Bob (who accepts Coffee tokens)
 
-Similarly, the DEX should support the above user story when "Burger tokens" and Coffee tokens” are substituted for any type of asset that may be traded on the OMG Network. This may include fiat or asset backed tokens, stablecoins and cryptocurrencies.
+Similarly, the DEX should support the above user story when "Burger tokens" and Coffee tokens" are substituted for any type of asset that may be traded on the OMG Network. This may include fiat or asset backed tokens, stablecoins and cryptocurrencies.
 
 #### Prior DEX Designs
 
@@ -361,7 +361,7 @@ A matrix comparing each of the current and prior designs against the dimensions 
 
 ## Current state
 
-As mentioned in [Plasma Update #3](https://kb.omgcommunity.org/~/edit/drafts/-LPo0rjQR6oihGGaQlIY/deep-dive/plasma/current-state/plasma-update-3), we held a workshop at the start of September. This workshop was an opportunity for us to reassess how our proposed designs serve the core values of the project and consider how to balance short-term priorities in order to best provide for the long-term viability of the network. We intend as always to deliver on the original OMG vision of a fully decentralized, permissionless, scalable network for uncensorable payments and exchange. Today we’d like to share an update on the progress of the [OMG DEX design](https://kb.omgcommunity.org/~/edit/drafts/-LPo0rjQR6oihGGaQlIY/deep-dive/dex-exchanges/omg-dex-design), and offer some insight into the reasoning behind our approach.
+As mentioned in [Plasma Update #3](https://kb.omgcommunity.org/~/edit/drafts/-LPo0rjQR6oihGGaQlIY/deep-dive/plasma/current-state/plasma-update-3), we held a workshop at the start of September. This workshop was an opportunity for us to reassess how our proposed designs serve the core values of the project and consider how to balance short-term priorities in order to best provide for the long-term viability of the network. We intend as always to deliver on the original OMG vision of a fully decentralized, permissionless, scalable network for uncensorable payments and exchange. Today we'd like to share an update on the progress of the [OMG DEX design](https://kb.omgcommunity.org/~/edit/drafts/-LPo0rjQR6oihGGaQlIY/deep-dive/dex-exchanges/omg-dex-design), and offer some insight into the reasoning behind our approach.
 
 The [roadmap](https://blog.omisego.network/omisego-roadmap-update-94819e20ada2) blog published earlier this year mentioned two phases for the decentralized exchange (DEX): the first phase with centralized order matching and on-chain settlement, the second phase moving order matching onto the Plasma chain as well. The design document expands on these required phases, the design, and the reasoning behind the priorities set for each phase of development.
 
@@ -369,7 +369,7 @@ We also want to be transparent about the limitations of the current design. We s
 
 **Overview**
 
-In the OMG DEX design and in this post, the term “venue” has a similar meaning to “exchange”. A venue is a place where orders (to trade digital assets) are arranged and executed — in other words, a place where a market is provided. Examples of venues include existing centralized crypto exchanges, decentralized exchanges, and traditional stock exchanges.
+In the OMG DEX design and in this post, the term "venue" has a similar meaning to "exchange". A venue is a place where orders (to trade digital assets) are arranged and executed — in other words, a place where a market is provided. Examples of venues include existing centralized crypto exchanges, decentralized exchanges, and traditional stock exchanges.
 
 In its initial phases, the OMG DEX will serve as the base layer for a collection of venues that perform order execution outside of the OMG Network consensus, with provable on-chain settlement on the OMG network (i.e., order matching is performed off-chain and any order that is either settled or canceled will be processed as a transaction — and incur transaction fees — on the OMG Network).
 
@@ -377,7 +377,7 @@ In its initial phases, the OMG DEX will serve as the base layer for a collection
 
 **Design Goals**
 
-There are many different types of decentralized exchanges being built or launched on numerous platforms. This is a healthy discourse for the ecosystem, but it can be confusing; so we feel it’s important to help our users understand what _we_ mean when we talk about a decentralized exchange. In order to do that, we first need to identify and define what characteristics or _dimensions_ we consider important for an exchange mechanism that is fast, fair and safe.
+There are many different types of decentralized exchanges being built or launched on numerous platforms. This is a healthy discourse for the ecosystem, but it can be confusing; so we feel it's important to help our users understand what _we_ mean when we talk about a decentralized exchange. In order to do that, we first need to identify and define what characteristics or _dimensions_ we consider important for an exchange mechanism that is fast, fair and safe.
 
 **Trustless**
 
@@ -395,11 +395,11 @@ The safety mechanisms described above are detailed in the OMG DEX [design docume
 
 **Transparent**
 
-Exchanges should also be fair and transparent. Here transparency refers both to transparency of venue and user behaviour, as well as transparency of market information such as pricing. Where transparency isn’t possible or desired due to the business needs of a venue, correct behaviour should nonetheless be both provable and enforceable.
+Exchanges should also be fair and transparent. Here transparency refers both to transparency of venue and user behaviour, as well as transparency of market information such as pricing. Where transparency isn't possible or desired due to the business needs of a venue, correct behaviour should nonetheless be both provable and enforceable.
 
 **Liquid**
 
-In order to build a DEX that supports a liquid market for the OMG Network and to reduce potential latency due to limitations on operator/validator capacity, we’ve chosen to start with support for off-chain continuous markets. Support for continuous markets allows venues to provide a much more flexible and seamless experience for their users: in a continuous market, trades may be executed at any time during a trading session (24/7 for crypto markets), as opposed to a call market where buyers and sellers must wait for specific times when a market is ‘called’ to trade. Stock markets and most crypto exchanges are continuous markets; the best known example of a call market would probably be US Treasury Bond [auctions](https://www.treasury.gov/resource-center/data-chart-center/quarterly-refunding/Documents/auctions.pdf).
+In order to build a DEX that supports a liquid market for the OMG Network and to reduce potential latency due to limitations on operator/validator capacity, we've chosen to start with support for off-chain continuous markets. Support for continuous markets allows venues to provide a much more flexible and seamless experience for their users: in a continuous market, trades may be executed at any time during a trading session (24/7 for crypto markets), as opposed to a call market where buyers and sellers must wait for specific times when a market is 'called' to trade. Stock markets and most crypto exchanges are continuous markets; the best known example of a call market would probably be US Treasury Bond [auctions](https://www.treasury.gov/resource-center/data-chart-center/quarterly-refunding/Documents/auctions.pdf).
 
 **Uncensorable**
 
@@ -419,9 +419,9 @@ We are actively researching an on-chain order book, and particularly how an on-c
 
 It is important to note that the design of the OMG DEX will continue to evolve as we continue to research the technology required to build our vision. The limit on the number of venues in particular is viewed as a short-term tradeoff in favor of a more efficient and liquid market — not a built-in constraint of the OMG DEX design itself, but a puzzle to be solved in the course of our continued effort to reduce per-transaction computational load.
 
-Finally, it’s worth mentioning that mainnet release of Tesuji Plasma is not dependent on DEX implementation. Even without a DEX layer, Minimum Viable Plasma (MVP) and More Viable Plasma ([MoreVP](https://ethresear.ch/t/more-viable-plasma/2160/2)) support simple state transitions such as payments, as well as providing interoperability between connected wallets.
+Finally, it's worth mentioning that mainnet release of Tesuji Plasma is not dependent on DEX implementation. Even without a DEX layer, Minimum Viable Plasma (MVP) and More Viable Plasma ([MoreVP](https://ethresear.ch/t/more-viable-plasma/2160/2)) support simple state transitions such as payments, as well as providing interoperability between connected wallets.
 
-We invite you to read and discuss the OMG DEX detailed design on our [GitHub](https://github.com/omisego/elixir-omg). We’re very much looking forward to collaborating on this crucial phase of implementation!
+We invite you to read and discuss the OMG DEX detailed design on our [GitHub](https://github.com/omisego/elixir-omg). We're very much looking forward to collaborating on this crucial phase of implementation!
 
 
 ## DEX Resources
