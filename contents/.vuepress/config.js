@@ -1,5 +1,6 @@
 module.exports = {
   title: 'OMG Knowledge Base',
+  description: 'OMG : the next-generation value transfer service',
   themeConfig: {
     sidebar: {
 
@@ -70,5 +71,8 @@ module.exports = {
         '@assets': 'assets'
       }
     }
-  }
+  },
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.png' }]
+  ],
 }
