@@ -1,6 +1,6 @@
 module.exports = {
   title: 'OMG Knowledge Base',
-  description: 'OMG : the next-generation value transfer service',
+  description: 'The OMG network is a scaling solution for finance on Ethereum',
   themeConfig: {
     sidebar: {
 
