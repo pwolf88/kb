@@ -34,14 +34,14 @@ module.exports = {
           ]
         },
       ],
-      '/deep-dive/': [
-        'dex',
-        'ewallet',
-        'plasma',
-        'cash-in-out',
-        'proof-of-stake',
-        'roadmap',
-      ],
+      // '/deep-dive/': [
+      //   'dex',
+      //   'ewallet',
+      //   'plasma',
+      //   'cash-in-out',
+      //   'proof-of-stake',
+      //   'roadmap',
+      // ],
       '/resources/': [
         'videos',
         'links',
