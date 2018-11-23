@@ -34,6 +34,14 @@ module.exports = {
           ]
         },
       ],
+      '/deep-dive/': [
+        'dex',
+        'ewallet',
+        'plasma',
+        'cash-in-out',
+        'proof-of-stake',
+        'roadmap',
+      ],
       '/resources/': [
         'videos',
         'links',
@@ -50,6 +58,7 @@ module.exports = {
     },
     nav: [
       { text: 'Guide', link: '/guide/' },
+      { text: 'Deep Dive', link: '/deep-dive/' },
       {
         text: 'Resources',
         items: [
