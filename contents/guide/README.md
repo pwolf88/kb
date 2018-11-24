@@ -6,20 +6,26 @@ title: Get Started
 
 OMG is the answer to a fundamental coordination problem amongst payment processors, gateways and financial institutions. By enabling decentralized exchange at high volume and low cost, OMG will provide a **next-generation value transfer service operating across currencies and asset types**, and across national borders and corporate ledgers.
 
-OMG has been created by OmiseGO to achieve two goals:
+OMG has been created to achieve two goals:
 
 1. Create the **OMG Money Gateway** as a scaling solution for Ethereum focused on enabling payments, trades, and other financial transactions in both crypto and fiat. 
 2. Develop a **digital wallet Software Development Kit (SDK)**, provided as an open-source, white label SDK, to enable businesses to leverage the benefits of the OMG Network.
 
 Through the OMG network, anyone will be able to conduct **real-time, peer-to-peer financial transactions**, including but not limited to payments, remittances, payroll deposit, B2B commerce, supply-chain nance, loyalty program activity, asset management, and other on-demand services in a completely decentralized and inexpensive way, and including highly performant and fully decentralized trading.
 
-> Omise will use the OMG network as the platform for their own payments processing needs, but _**neither Omise nor OmiseGO will own or control the network.**_
+## OMG / Omise / OmiseGO
 
-**OmiseGO is a subsidiary of Omise Holdings**, a leading online payment gateway service provider operating in Southeast Asia. It is pronounced _oh-mee-say-go_.
+If you are confused around the naming of the different entities gravitating around this project, see below :
 
-They are building the OMG Network, and will open source its code and SDK when the network is live.
+- **OMG** is both the name of the network, and the ticker of the [ERC 20 token](basics.html#omg-token-function) that will be used to secure the network.
 
-Read more : [History](/guide/history.html)
+- **OmiseGO** is an incorporated entity, subsidiary of Omise Holdings, and has been created by raising funds through a [public token sale](history.html#​how-was-omisego-launched-​) in June 2017. It is pronounced _oh-mee-say-go_.
+
+- [**Omise**](https://www.omise.co) is a leading online payment gateway service provider operating in Southeast Asia.
+
+So OmiseGO is building the OMG Network (in an open source environment, see their [Github](https://github.com/omisego)), and Omise will move its transactions to it when the network is live.
+
+The network will be _public_ and _open source_, so **neither Omise nor OmiseGO will own or control the network**, the validators will, as any decentralized blockchain.
 
 ## Why do we need OMG?
 

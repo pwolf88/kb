@@ -1,6 +1,6 @@
 module.exports = {
-  title: 'OMG Knowledge Base',
-  description: 'The OMG network is a scaling solution for finance on Ethereum',
+  title: 'OMG Network',
+  description: 'A scaling solution for finance on Ethereum',
   themeConfig: {
     sidebar: {
 
@@ -45,6 +45,7 @@ module.exports = {
       '/resources/': [
         'videos',
         'links',
+        'glossary',
         'faq',
         'ama',
       ],
@@ -64,6 +65,7 @@ module.exports = {
         items: [
           { text: 'Videos', link: '/resources/videos' },
           { text: 'Links', link: '/resources/links' },
+          { text: 'Glossary', link: '/resources/glossary' },
           { text: 'FAQ', link: '/resources/faq' },
           { text: 'AMAs', link: '/resources/ama' },
         ]
