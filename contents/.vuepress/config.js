@@ -1,6 +1,7 @@
 module.exports = {
   title: 'OMG Network',
   description: 'A scaling solution for finance on Ethereum',
+  base: '/kb/',
   themeConfig: {
     sidebar: {
 
