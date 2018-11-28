@@ -14,7 +14,6 @@ module.exports = {
             'history',
             'vision',
             'basics',
-            'glossary',
           ]
         },
         {
