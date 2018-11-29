@@ -15,7 +15,7 @@ OmiseGO is an incorporated entity, subsidiary of Omise Holdings, and has been cr
 
 Omise is a leading online payment gateway service provider operating in Southeast Asia.
 
-::: warning
+::: warning DISCLAIMER
 _Please note: the OMG Network is not owned by any single one party. Instead, it is an open distributed network that is 100% public. It is not to be mistaken with OmiseGO, which is a subsidiary of Omise Holdings and has the role of (intially) building and maintaining the network. No single entity will own or control the network._
 :::
 
